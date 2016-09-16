@@ -117,17 +117,17 @@ public class Principal extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel13.setText("i");
-        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 32, 10, -1));
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 20, 10, -1));
 
         txtImaginario3.setEditable(false);
-        jPanel3.add(txtImaginario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 25, 60, 25));
+        jPanel3.add(txtImaginario3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 60, 25));
 
         txtReal3.setEditable(false);
-        jPanel3.add(txtReal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 25, 60, 25));
+        jPanel3.add(txtReal3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 25));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel14.setText("+");
-        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 27, -1, -1));
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 20, -1, -1));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 200, 70));
 
@@ -135,26 +135,26 @@ public class Principal extends javax.swing.JFrame {
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txtNumeradorReal.setEditable(false);
-        jPanel2.add(txtNumeradorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 60, 25));
-        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 50, 60, 10));
+        jPanel2.add(txtNumeradorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 60, 25));
+        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, 60, 10));
 
         txtDenominadorReal.setEditable(false);
-        jPanel2.add(txtDenominadorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 55, 60, 25));
+        jPanel2.add(txtDenominadorReal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 60, 25));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel11.setText("+");
-        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 40, -1, -1));
+        jPanel2.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 40, -1, -1));
 
         txtNumeradorImaginario.setEditable(false);
-        jPanel2.add(txtNumeradorImaginario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 60, 25));
-        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 60, 10));
+        jPanel2.add(txtNumeradorImaginario, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 20, 60, 25));
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 60, 10));
 
         txtDenominadorImaginario.setEditable(false);
-        jPanel2.add(txtDenominadorImaginario, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 55, 60, 25));
+        jPanel2.add(txtDenominadorImaginario, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 50, 60, 25));
 
         jLabel10.setFont(new java.awt.Font("Times New Roman", 2, 14)); // NOI18N
         jLabel10.setText("i");
-        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(184, 40, 10, -1));
+        jPanel2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 40, 10, -1));
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 210, 100));
 
@@ -170,6 +170,7 @@ public class Principal extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void cmdCalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdCalcularActionPerformed
@@ -226,7 +227,7 @@ public class Principal extends javax.swing.JFrame {
                         txtDenominadorImaginario.setText(String.valueOf(aux));
                         break;
                 }
-            } catch (NumberFormatException e) {
+            } catch (NumberFormatException x) {
                 JOptionPane.showMessageDialog(null, "Valor No valido", "ERROR", JOptionPane.ERROR_MESSAGE);
 
             }
@@ -235,16 +236,16 @@ public class Principal extends javax.swing.JFrame {
     }//GEN-LAST:event_cmdCalcularActionPerformed
 
     private void cmdLimpiarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdLimpiarActionPerformed
-        // TODO add your handling code here:
-        txtReal1.setText("");
-        txtImaginario1.setText("");
-        txtReal2.setText("");
-        txtImaginario2.setText("");
+
         txtReal3.setText("");
         txtImaginario3.setText("");
         txtNumeradorReal.setText("");
         txtDenominadorReal.setText("");
         txtNumeradorImaginario.setText("");
+        txtReal1.setText("");
+        txtImaginario1.setText("");
+        txtReal2.setText("");
+        txtImaginario2.setText("");
         txtDenominadorImaginario.setText("");
         txtReal1.requestFocusInWindow();
         cmbOperacion.setSelectedIndex(0);
